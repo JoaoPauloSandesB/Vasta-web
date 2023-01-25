@@ -97,12 +97,12 @@ function App() {
       <div className="App-portfolio" id="portfolio">
         <p className="titulo">PORTFÓLIO</p>
         <div className="linha-portfolio">
-          <img src={img_portfolio_1} className="image" alt="img" width="294" height="195" />
-          <img src={img_portfolio_2} className="image" alt="img" width="294" height="195" />
-          <img src={img_portfolio_3} className="image" alt="img" width="294" height="195" />
-          <img src={img_portfolio_4} className="image" alt="img" width="294" height="195" />
-          <img src={img_portfolio_5} className={selectPortfolio ? "image" : "image-M"} alt="img" width="294" height="195" />
-          <img src={img_portfolio_6} className={selectPortfolio ? "image" : "image-M"} alt="img" width="294" height="195" />
+          <img src={img_portfolio_1} className="image" alt="img" />
+          <img src={img_portfolio_2} className="image" alt="img" />
+          <img src={img_portfolio_3} className="image" alt="img" />
+          <img src={img_portfolio_4} className="image" alt="img" />
+          <img src={img_portfolio_5} className={selectPortfolio ? "image" : "image-M"} alt="img" />
+          <img src={img_portfolio_6} className={selectPortfolio ? "image" : "image-M"} alt="img" />
         </div>
         <button onClick={() => { setSelectPortfolio(!selectPortfolio) }} className="botao">CARREGAR MAIS PROJETOS</button>
       </div>
@@ -117,7 +117,7 @@ function App() {
           <div key={n} className={(n >= carosselNumber && n < carosselNumber + commentNumber) ? 'box-depoimento-visible' : 'box-depoimento-invisible'}>
 
             <div className="box-info">
-              <Avatar size="80" name="Joao Paulo" />
+              <Avatar size="80" name={comm} />
               <div className="info">
                 <p className="nome">{comm}</p>
                 <p className="star">&#9733; &#9733; &#9733; &#9733; &#9733; </p>
