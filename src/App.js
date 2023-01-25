@@ -1,6 +1,7 @@
 import Header from './components/header/MainHeader';
 import { useState, useEffect } from 'react';
 
+
 import IMAGEM1 from './img/IMAGEM 1.jpg';
 import IMAGEM2 from './img/IMAGEM 2.jpg';
 import logoRodape from './img/footer_logo_360x.png';
@@ -18,46 +19,6 @@ import Avatar from 'react-avatar';
 import './App.css';
 import './AppMedia.css';
 import './carossel.css';
-
-// Import the functions you need from the SDKs you need
-
-import { initializeApp } from "firebase/app";
-
-import { getAnalytics } from "firebase/analytics";
-
-// TODO: Add SDKs for Firebase products that you want to use
-
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-
-// Your web app's Firebase configuration
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-const firebaseConfig = {
-
-  apiKey: "AIzaSyD64hKI3Uho27GLwSW4hGKRI_gUeZZDTJw",
-
-  authDomain: "vasta-web.firebaseapp.com",
-
-  projectId: "vasta-web",
-
-  storageBucket: "vasta-web.appspot.com",
-
-  messagingSenderId: "183500523392",
-
-  appId: "1:183500523392:web:725e3f384793547fd5e365",
-
-  measurementId: "G-PDXZCT10V0"
-
-};
-
-
-// Initialize Firebase
-
-const app = initializeApp(firebaseConfig);
-
-const analytics = getAnalytics(app);
 
 function App() {
   const [carosselNumber, setCarosselNumber] = useState(0);
