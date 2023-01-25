@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "vasta-web",
+    "staging": "vasta-web"
+  },
+  "targets": {},
+  "etags": {}
+}
