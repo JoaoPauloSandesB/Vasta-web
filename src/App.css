@@ -1,0 +1,468 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-sobre {
+  position: relative;
+  width: 100%;
+}
+
+.App-sobre .titulo {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 32px auto 16px auto;
+}
+
+.App-sobre .paragrafo-1 {
+  width: 88.8%;
+  text-align: justify;
+  margin: auto;
+  display: flex;
+  line-height: 2rem;
+}
+
+.App-sobre .paragrafo-1 .image-1 {
+  width: 25rem;
+}
+
+.App-sobre .paragrafo-1 .info {
+  padding-left: 3%;
+  text-align: justify;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.App-sobre .paragrafo-1 .botao {
+  background-color: #587391;
+  color: white;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  margin-top: 0.6rem;
+  display: block;
+}
+
+.App-sobre .paragrafo-1 .botao:active,
+.App-portfolio .botao:active {
+  background-color: #4682B4;
+}
+
+.App-sobre .paragrafo-1 .botaoMobile {
+  display: none;
+}
+
+.App-sobre .paragrafo-2 {
+  width: 88.8%;
+  padding-top: 1.5rem;
+  text-align: justify;
+  margin: auto;
+  display: flex;
+  line-height: 2rem;
+}
+
+.App-sobre .paragrafo-2 .info {
+  padding-right: 3%;
+  text-align: justify;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.App-sobre .paragrafo-2 .image-2 {
+  width: 25rem;
+  min-width: 25rem;
+  display: block;
+}
+
+.App-sobre .paragrafo-2 .image-2-M {
+  width: 25rem;
+  min-width: 25rem;
+  display: none;
+}
+
+.App-portfolio {
+  position: relative;
+  margin: auto;
+}
+
+.App-portfolio .titulo {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 64px auto 16px auto;
+}
+
+.App-portfolio .linha-portfolio {
+  width: 80%;
+  margin: auto;
+  column-count: 3;
+  gap: 15px;
+}
+
+
+.App-portfolio .botao {
+  background-color: #587391;
+  color: white;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+
+.App-depoimentos {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.App-depoimentos .icon_next {
+  margin: auto;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.App-depoimentos .icon_before {
+  margin: auto;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.App-depoimentos .star {
+  color: #f3d342;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.titulo-depoimento {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 64px auto 16px auto;
+}
+
+.box-depoimento-visible {
+  display: block;
+}
+
+.box-depoimento-invisible {
+  display: none;
+}
+
+.App-depoimentos .box-info {
+  display: flex;
+  text-align: left;
+  text-justify: auto;
+  width: 90%;
+  max-width: 30vw;
+
+  font-size: 0.9rem;
+}
+
+.App-depoimentos .box-info .info {
+  margin-left: 16px;
+}
+
+.App-depoimentos .box-info .info .nome {
+  margin: 0;
+  font-weight: 600;
+}
+
+.App-depoimentos .box-info .info .dp {
+  margin: 0;
+  margin-top: 0px;
+}
+
+.titulo-contato {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  margin: 64px auto 8px auto;
+}
+
+.App-contato {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+
+.App-contato .personalinfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.App-contato .personalinfo div {
+  width: 100%;
+}
+
+.App-contato .personalinfo input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.App-contato .personalinfo div {
+  width: 100%;
+}
+
+
+.App-contato .divdata {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.App-contato .divdata input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.App-contato .divdata textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  height: 100%;
+}
+
+.App-contato .divdata .tellbutton {
+
+  width: 47.5%;
+}
+
+.App-contato .divdata .msgbutton {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.App-contato .divdata .msgbutton p {
+  width: 47%;
+  font-size: small;
+  margin: auto auto auto 0;
+}
+
+.App-contato .divdata .msgbutton a {
+  color: #5a7da3;
+}
+
+.App-contato .divdata .msgbutton a:hover {
+  color: darkblue;
+}
+
+.App-contato .divdata .msg {
+  width: 47.5%;
+}
+
+.App-contato .divdata .msgbutton button {
+  background-color: #27b523;
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 1.1rem 4rem;
+  margin: 0.6rem 0 0.6rem 0;
+}
+
+.rodape {
+  display: flex;
+  width: 100%;
+  margin: 64px auto auto auto;
+  background-color: #333333;
+}
+
+.rodape .E {
+  width: 45%;
+  margin: 35px 0px 35px auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px 2px 4px 4px;
+}
+
+.rodape .E .tittle-port {
+  color: white;
+  font-size: 1.5rem;
+
+  width: 90%;
+  margin: 36px auto 20px auto;
+  text-align: center;
+}
+
+.rodape .E p {
+  color: white;
+}
+
+.rodape .E .news {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.rodape .E input {
+  width: 60%;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.rodape .E button {
+  background-color: #27b523;
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  margin: 0;
+  width: 30%;
+}
+
+.rodape .E .port {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+}
+
+.rodape .E .port-div1 {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
+.rodape .E .port img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.rodape .E .port p {
+  width: 100%;
+  margin: 0 auto 30px auto;
+  background-color: #3b3b3b;
+}
+
+.rodape .D {
+
+  width: 45%;
+  margin: 35px auto 35px 0;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px 4px 4px 2px;
+}
+
+.rodape .D-menu {
+  display: flex;
+  padding-top: 10px;
+}
+
+
+.rodape .D .d1 {
+  width: 100%;
+  margin: 0px auto auto 5%;
+}
+
+.rodape .D .d2 {
+  width: 100%;
+  margin: 0px 5% auto auto;
+}
+
+.rodape .D .p1 span,
+.rodape .D .p2 span {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+.rodape .D .p1 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+.rodape .D .p2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.rodape .D .p2 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px auto;
+}
+
+
+
+.rodape .D .image {
+  margin: auto;
+  display: block;
+}
+
+.rodape .D .div-image-D {
+  margin: 30px auto;
+  bottom: 0;
+  display: block;
+}
+
+.rodape .E .div-image-E {
+  margin: 30px auto;
+  bottom: 0;
+  display: none;
+}
+
+.App-portfolio .linha-portfolio .image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto auto 15px auto;
+}
+
+.App-portfolio .linha-portfolio .image-M {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto auto 15px auto;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

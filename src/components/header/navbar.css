@@ -1,0 +1,305 @@
+
+.headerstyle {
+  position: relative;
+}
+
+.navbar button {
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  max-height: 1rem;
+}
+
+.navbar span {
+  font-size: 1.6rem;
+  max-height: 1.6rem;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  background: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.navbar-overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-overlay {
+    display: none;
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.8rem;
+  display: grid;
+  place-items: center;
+  /* width: 5rem;
+ */
+  padding: 0;
+}
+
+.navbar-burger-search {
+  position: absolute;
+  top: 0;
+  right: 13%;
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 9rem;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .navbar-burger-search,
+  .navbar-burger {
+    display: none;
+  }
+}
+
+.navbar-title {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  margin-left: 5.6%;
+  height: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-title {
+    margin-left: 3%;
+    top: 0.5rem;
+  }
+}
+
+.navbar-menu input {
+  vertical-align: top;
+  height: auto;
+  margin-right: 5px;
+  display: none;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+body.open .navbar-menu input {
+  display: inline;
+}
+
+.navbar-menu {
+
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  translate: -100% 0;
+  width: 270px;
+  height: 100%;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  background: white;
+  visibility: hidden;
+  transition: translate 0.3s;
+}
+
+.navbar-img-menu {
+  display: none;
+}
+
+body.open .navbar-img-menu {
+  display: block;
+}
+
+body.open .navbar-menu {
+  translate: 0 0;
+  visibility: visible;
+  z-index: 7;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-menu {
+    position: absolute;
+    translate: -5% 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .navbar-menu {
+    left: 0;
+  }
+}
+
+.navbar-menu button {
+  /* color: #a32121; */
+  color: black;
+  background: transparent;
+  /* padding: 0 8px;
+ */
+  /*     margin-top: 4px; */
+  /*     border-style: dotted; */
+  /*margin-left: 24px; */
+  /* 
+    font-size: 1rem; */
+  /* border-style: dotted; */
+  /* align-items: bottom; */
+}
+
+@media only screen and (max-width: 599px) {
+  .navbar-menu {
+    left: 0;
+  }
+}
+
+.navbar-menu>button.active {
+  color: black;
+  text-decoration: overline 2px;
+}
+
+.App-banner-img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: block;
+}
+
+.App-banner-img-media {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-banner-img {
+    display: none;
+  }
+
+  .App-banner-img-media {
+    display: block;
+  }
+}
+
+
+
+.App-banner-tittle {
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  left: 5.6%;
+  margin-left: 0%;
+  z-index: 1;
+  text-align: left;
+}
+
+.App-banner-tittle .titulo {
+  font-size: 3.5rem;
+  padding: 0px;
+  margin: 0%;
+  color: #3b3b3b;
+  z-index: 1;
+}
+
+.App-banner-tittle .subtitulo {
+  color: #676767;
+  font-size: 1.6rem;
+  padding: 0px;
+  margin: 0%;
+  z-index: 1;
+}
+
+.App-banner-tittle .botao {
+  background-color: #27b523;
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-banner-tittle {
+    padding: 0;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .App-banner-tittle .titulo {
+    font-size: 1.6rem;
+    padding: 0px;
+    margin: 0%;
+    color: #3b3b3b;
+    z-index: 1;
+  }
+
+  .App-banner-tittle .subtitulo {
+    color: #676767;
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0%;
+    z-index: 1;
+  }
+
+  .App-banner-tittle .botao {
+    background-color: #27b523;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 2rem 0 0 0;
+    border-style: dotted;
+  }
+}
