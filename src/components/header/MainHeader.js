@@ -20,15 +20,11 @@ const MainHeader = (props) => {
 
   return (
     <div className="headerstyle">
-
       <img src={banner} className="App-banner-img" alt="Banner" />
       <img src={bannerMobile} className="App-banner-img-media" alt="Banner" />
       <div className="App-banner-tittle">
         <p className="titulo">
           <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span>
-{/*           <span class="blinking1">O FUTURO É AGORAuturo é Agora</span>
-          <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span>
-          <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span> */}
         </p>
         <p className="subtitulo">Projetos personalizados para o sucesso dos seus negócios!</p>
         <button className="botao">FAÇA UM ORÇAMENTO</button>
@@ -37,7 +33,7 @@ const MainHeader = (props) => {
 
         <div className="navbar-overlay" onClick={toggleMenuOpen}></div>
 
-        <img src={logo} onClick={() => { navigate("/home"); }} className="navbar-title" alt="logo" />
+        <img src={logo} onClick={() => { navigate("/"); }} className="navbar-title" alt="logo" />
 
 
 
@@ -53,15 +49,11 @@ const MainHeader = (props) => {
           </section>
         </nav>
 
-
-
-        {/* <button onClick={() => { navigate("#search"); }} className="navbar-burger-search"> <span className="material-icons">search</span> </button>
- */}
         <button type="button" className="navbar-burger" onClick={toggleMenuOpen}>
           <span className="material-icons">menu</span>
         </button>
 
-      </nav>
+      </nav> 
 
 
 
