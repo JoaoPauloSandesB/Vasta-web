@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none; /* remove qualquer sublinhado existente */
+}
+
+a:hover {
+  text-decoration: underline; /* adiciona sublinhado ao texto quando o mouse passa por cima */
+}
+
+button {
+  filter: brightness(100%); /* cor original do botão */
+}
+
+button:hover {
+  filter: brightness(120%); /* deixa o botão com 120% de brilho */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -258,9 +274,9 @@
   color: #5a7da3;
 }
 
-.App-contato .divdata .msgbutton a:hover {
+/* .App-contato .divdata .msgbutton a:hover {
   color: darkblue;
-}
+} */
 
 .App-contato .divdata .msg {
   width: 47.5%;
@@ -391,7 +407,6 @@
 }
 
 .rodape .D .p2 a {
-  text-decoration: none;
   color: white;
 }
 
@@ -453,6 +468,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.itemHide{
+  display: none;
 }
 
 @keyframes App-logo-spin {

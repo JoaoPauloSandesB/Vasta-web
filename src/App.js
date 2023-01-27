@@ -26,10 +26,20 @@ function App() {
   const [selectSobre, setSelectSobre] = useState(false);
   const [selectPortfolio, setSelectPortfolio] = useState(false);
 
+  const [listSobre, setListSobre] = useState(true);
+  const [listSobreOpen, setListSobreOpen] = useState(true);
+
+  const [listMenu, setListMenu] = useState(true);
+  const [listMenuOpen, setListMenuOpen] = useState(true);
+
 
   useEffect(() => {
     if (window.screen.width < 600) {
       setCommentNumber(1);
+      setListSobre(false);
+      setListSobreOpen(false);
+      setListMenu(false);
+      setListMenuOpen(false);
     } else {
       setCommentNumber(3);
     }
@@ -62,12 +72,12 @@ function App() {
         <div className="paragrafo-1">
           <img src={IMAGEM1} className="image-1" alt="img" />
           <div className="info">
-            <p>A Vasta Web é uma especializada em desenvolvimento de sites personalizados e profissionais
-              para empresas e indivíduos. Utilizamos as últimas tecnologias e tendências para criar sites
-              atraentes, funcionais e otimizados para mecanismos de busca. Oferecemos uma ampla gama de
-              serviços, desde a criação de sites desde o zero até a manutenção e otimização de sites
-              existentes. Nossa equipe de designers e desenvolvedores experientes trabalha em estreita
-              colaboração com nossos clientes para entender suas necessidades e criar soluções
+            <p>A Vasta Web é uma firma especializada em desenvolvimento de sites profissionais
+              para empresas e indivíduos. Utilizamos as últimas tecnologias e tendências para criar paginas
+              atraentes, funcionais e otimizadas para mecanismos de busca. Oferecemos uma ampla gama de
+              serviços, desde a criação de conteudo web do zero até a manutenção e otimização de produtos
+              existentes. Nossa equipe de designers e desenvolvedores experientes trabalham em estreita
+              colaboração com nossos clientes para entender suas necessidades e criar formulas
               personalizadas para atender aos seus objetivos de negócios. </p>
             {!selectSobre && <button onClick={() => { setSelectSobre(!selectSobre) }} className="botao">SAIBA MAIS</button>}
             {!selectSobre && <button onClick={() => { setSelectSobre(!selectSobre) }} className="botaoMobile">
@@ -80,13 +90,13 @@ function App() {
         {selectSobre && <div className="paragrafo-2">
           <img src={IMAGEM2} className="image-2-M" alt="img" />
           <div className="info">
-            <p>Além de desenvolver sites, também oferecemos serviços de SEO e marketing digital para ajudar
-              a maximizar o alcance e a eficácia do seu site. Isso inclui a otimização de mecanismos de
+            <p>Além de desenvolver websites, também oferecemos serviços de SEO e marketing digital para ajudar
+              a maximizar o alcance e a eficácia do seu estabelecimento comercial. Isso inclui a otimização de mecanismos de
               busca, criação de conteúdo de qualidade, geração de leads e análise de dados para entender
               como os visitantes estão interagindo com o seu site e como podemos melhorar a sua experiência.
-              Nós também oferecemos suporte contínuo e manutenção do site para garantir que ele continue
-              funcionando corretamente e esteja sempre atualizado com as últimas tendências e tecnologias.
-              Se você está procurando uma empresa confiável para ajudá-lo a criar ou melhorar o seu site,
+              Nós também oferecemos suporte contínuo e manutenção para garantir que ele continue
+              funcionando corretamente e esteja sempre atualizado.
+              Se você está procurando uma empresa confiável para ajudá-lo a criar ou melhorar o seu conteudo digital,
               a empresa Vasta Web é a escolha certa.</p>
           </div>
           <img src={IMAGEM2} className="image-2" alt="img" />
@@ -192,18 +202,27 @@ function App() {
         <div className='D'>
           <div className='D-menu'>
             <div className="d1">
-              <p className="p1"><span className="material-icons">expand_more</span> MENU <span className="material-icons">expand_more</span></p>
-              <div>
+              <p className="p1">
+                <span onClick={() => { setListMenuOpen(!listMenuOpen) }} className={!listMenu ? "material-icons" : "itemHide"}>{listMenuOpen ? "expand_less" :"expand_more"} </span>
+                MENU
+                <span onClick={() => { setListMenuOpen(!listMenuOpen) }} className={!listMenu ? "material-icons" : "itemHide"}> {listMenuOpen ? "expand_less" :"expand_more"}</span>
+                
+                </p>
+              {listMenuOpen && <div>
                 <p className="p2"><a href="#sobre">Sobre</a></p>
                 <p className="p2"><a href="#portfolio">Portfolio</a></p>
                 <p className="p2"><a href="#depoimentos">Depoimentos</a></p>
-                <p className="p2"><a href="#contato">Contato</a></p></div>
+                <p className="p2"><a href="#contato">Contato</a></p></div>}
             </div>
             <div className="d2">
-              <p className="p2"><span className="material-icons">expand_more</span> SOBRE <span className="material-icons">expand_more</span></p>
-              <div>
+              <p className="p2">
+                <span onClick={() => { setListSobreOpen(!listSobreOpen) }} className={!listSobre ? "material-icons" : "itemHide"}>{listSobreOpen ? "expand_less" :"expand_more"} </span>
+                SOBRE
+                <span onClick={() => { setListSobreOpen(!listSobreOpen) }} className={!listSobre ? "material-icons" : "itemHide"}>{listSobreOpen ? "expand_less" :"expand_more"} </span>
+                </p>
+                {listSobreOpen && <div>
                 <p className="p2">Politica de Privacidade</p>
-                <p className="p2">Termos de Uso</p></div>
+                <p className="p2">Termos de Uso</p></div>}
             </div>
           </div>
           <div className="div-image-D">

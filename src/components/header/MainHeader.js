@@ -24,16 +24,21 @@ const MainHeader = (props) => {
       <img src={banner} className="App-banner-img" alt="Banner" />
       <img src={bannerMobile} className="App-banner-img-media" alt="Banner" />
       <div className="App-banner-tittle">
-          <p className="titulo">SOLUÇÕES EM DESENVOLVIMENTO WEB</p>
-          <p className="subtitulo">Projetos personalizados para o sucesso dos seus negócios!</p>
-          <button className="botao">FAÇA UM ORÇAMENTO</button>
-        </div>
+        <p className="titulo">
+          <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span>
+{/*           <span class="blinking1">O FUTURO É AGORAuturo é Agora</span>
+          <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span>
+          <span class="blinking1">SOLUÇÕES EM DESENVOLVIMENTO WEB</span> */}
+        </p>
+        <p className="subtitulo">Projetos personalizados para o sucesso dos seus negócios!</p>
+        <button className="botao">FAÇA UM ORÇAMENTO</button>
+      </div>
       <nav className="navbar">
 
         <div className="navbar-overlay" onClick={toggleMenuOpen}></div>
 
         <img src={logo} onClick={() => { navigate("/home"); }} className="navbar-title" alt="logo" />
-        
+
 
 
         <nav className="navbar-menu">
@@ -43,8 +48,8 @@ const MainHeader = (props) => {
           <button><a href="#depoimentos">Depoimentos</a></button>
           <button><a href="#contato">Contato</a></button>
           <section>
-          <input type="search" id="InputSearch" placeholder="Search"></input>
-          <button onClick={() => { navigate("#search"); }}> <div> <span className="material-icons">search</span> </div></button>
+            <input type="search" id="InputSearch" placeholder="Search"></input>
+            <button onClick={() => { navigate("#search"); }}> <div> <span className="material-icons">search</span> </div></button>
           </section>
         </nav>
 
